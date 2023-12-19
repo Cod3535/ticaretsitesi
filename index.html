@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<header>
+  
+       <div data-aos="zoom-in" class="container g-0 p-4  ">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-3">
+          <div class="container g-0 ">
+            <img  width="50px" height="50px" class="ms-5" src="https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg" alt="">
+            <a class="navbar-brand ps-4 fs-2" href="#"><span class="loader">Birgül</span></a>      
+            <form class="deneme" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+              <button class="btn btn-outline-danger " type="submit">Arama</button>
+            </form>
+            
+            <div class="hamburger">
+              <div class="dropdown">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-dark">
+                  <a class="dropdown-item active" href="./index.html">Anasayfa</a>
+                  <a class="dropdown-item" href="./items.html">Favorilerim</a>
+                  <a class="dropdown-item" href="#">Siparişlerim</a>
+                  <hr class="dropdown-divider">
+                  <a class="dropdown-item" href="./giriş.html">Anasayfa</a>
+                </div>
+              </div>
+            </div>
+            <div class="üstyazi d-flex" id="navbarSupportedContent">                    
+              <ul class="navbar-nav gap-1  me-auto mb-2 mb-lg-0">
+                <li class="nav-item d-flex align-items-center">
+                  <i class="fa-solid fa-house"></i>
+                  <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <i class="fa-solid fa-heart"></i>
+                  <a class="nav-link" href="./items.html">Favorilerim</a>
+                </li>
+                <li class="nav-item dropdown d-flex align-items-center">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <a class="nav-link dropdown-toggle saydir" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sepetim <span class="getirs text-bg-danger">a</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark ">
+                    <li><a class="dropdown-item" href="./sepet.html">Ürünlerim</a></li>
+                    <li><a class="dropdown-item" href="#">Sipariş Geçmişi</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item " href="#">Kargom Nerede?</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <i class="fa-solid fa-user"></i>
+                  <a class="nav-link" href="./giriş.html">GirişYap</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+       </div>
+</header>
+<div class="cizgi">
+</div>
+<div data-aos="zoom-in" class="kategori ps-2">
+  <ul class="d-flex list-unstyled justify-content-around align-items-center mt-1 fw-bold ">
+  <li>
+    <a onclick="git()">Elektronik</a>
+  </li>
+  <li>
+    <a href="#">Giyim</a>
+  </li>
+  <li>
+    <a href="#">Market</a>
+  </li>
+  <li>
+    <a href="#">Kozmetik</a>
+  </li>
+  <li>
+    <a href="#">Spor</a>
+  </li>
+  <li>
+    <a href="#">Hediyelik</a>
+  </li>
+  <li>
+    <a href="#">SüperMarket</a>
+  </li>
+  <li>
+    <a href="#">Ev&Eşya</a>
+  </li>
+  <li>
+    <a href="#">Çok Satanlar</a>
+  </li>  
+  </ul>
+</div>
+<body>
+<div class="yapistir">
+  <nav class="main-menu">
+    <div>
+       <a class="logo" href="#">
+       </a> 
+     </div> 
+   <div class="settings"></div>
+   <div class="scrollbar" id="style-1">    
+   <ul>   
+   <li>                                 
+   <a href="#">
+   <i class="fa fa-envelope-o fa-lg"></i><span class="nav-text">İletişim</span>
+   </a>
+   </li>   
+   <li class="darkerlishadow">
+   <a href="#">
+   <i class="fa fa-clock-o fa-lg"></i><span class="nav-text">İncelediklerim</span>
+   </a>
+   </li>
+   <li class="darkerli">
+   <a href="#">
+    <i class="fa fa-solid fa-copyright"></i><span class="nav-text">Markalar</span>
+   </a>
+   </li>
+   <li class="darkerli">
+   <a href="#">
+    <i class="fa fa-solid fa-shirt"></i><span class="nav-text">Giyim</span>
+   </a>
+   </li>
+   <li class="darkerli">
+   <a href="#">
+    <i class="fa fa-solid fa-mobile"></i><span class="nav-text">Telefonlar</span>
+   </a>
+   </li>
+   <li class="darkerli">
+   <a href="#">
+    <i class="fa fa-solid fa-film"></i><span class="nav-text">Film & Music</span>
+   </a>
+   </li>
+   <li class="darkerli">
+   <a href="#">
+    <i class="fa fa-solid fa-desktop"></i><span class="nav-text">Bilgisayarlar</span>
+   </a>
+   </li>
+   <li class="darkerli">
+   <a href="#">
+    <i class="fa fa-solid fa-headphones"></i><span class="nav-text">Kulaklıklar</span>
+   </a>
+   </li><li class="darkerli">
+   <a href="#">
+    <i class="fa fa-solid fa-headphones-simple"></i><span class="nav-text">Kablosuz Kulaklıklar</span>
+   </a>
+   </li>
+   <li class="darkerli"><a href="#">
+    <i class="fa fa-solid fa-chair"></i><span class="nav-text">Oyuncu Koltukları</span>
+  </a>
+   </li>
+   <li class="darkerli"><a href="#">
+    <i class=" fa fa-solid fa-laptop"></i><span class="nav-text">Laptoplar</span></a>
+   </li>
+   <li class="darkerlishadowdown"><a href="#">
+    <i class="fa fa-solid fa-tv fa-lg"></i>
+   <span class="nav-text">Televizyonlar</span>
+   </a>
+   </li>
+   </ul>
+   <li>                                
+   <a href="#">
+   <i class="fa fa-question-circle fa-lg"></i>
+   <span class="nav-text">Help</span>
+   </a>
+   </li>   
+   <ul class="logout">
+   <li>
+   <a href="#">
+   <i class="fa fa-lightbulb-o fa-lg"></i>
+   <span class="nav-text">BLOG </span>
+   </a>
+   </li>  
+   </ul>
+           </nav>
+</div>
+  <section class="arkarenk">
+    <div data-aos="zoom-in-up" class="galeri row g-0  d-flex align-items-center justify-content-end">
+      <div class="col-10 " >
+          <div class="gallery">
+            <a target="_blank" href="#">
+              <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2125_20231124164227.jpeg">
+            </a>
+            <div class="desc fw-bold text-white">Apple Telefon ve Aksesuarları</div>
+          </div>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2145_20231124163654.jpeg/format:webp" >
+          </a>
+          <div class="desc fw-bold text-white">Honor Cep Telefonları ve Aksesuarları</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2105_20231129230338.png/format:webp">
+          </a>
+          <div class="desc fw-bold text-white">Philips Akıllı Süpürge</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2183_20231128200004.png/format:webp"  >
+          </a>
+          <div class="desc fw-bold text-white">Windsor Buzdolapları</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2122_20231127091459.jpeg/format:webp">
+          </a>
+          <div class="desc fw-bold text-white">Oyun Canavarı Laptoplar</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2131_20231127142452.jpeg/format:webp">
+          </a>
+          <div class="desc fw-bold text-white">Elektronik Küçük Aletler</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2154_20231129232506.png/format:webp">
+          </a>
+          <div class="desc fw-bold text-white">Vestel Televizyon</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2164_20231129093718.jpeg/format:webp">
+          </a>
+          <div class="desc fw-bold text-white">Oyuncu Monitörleri</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2163_20231124163514.jpeg/format:webp">
+          </a>
+          <div class="desc fw-bold text-white">Iphone Telefon Modelleri</div>
+        </div>
+        <div class="gallery" >
+          <a target="_blank" href="#">
+            <img  src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2144_20231130142602.png/format:webp">
+          </a>
+          <div class="desc fw-bold text-white">Regal Çamaşır Makinesi</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="https://images.hepsiburada.net/banners/s/0/960-480/responsive_960x480_(5)133441002316999079.jpg/format:webp">
+          </a>
+          <div class="desc fw-bold text-white">Masaüstü Oyuncu Bilgisayarlar</div>
+        </div>
+       </div>
+    </div>
+  </section>
+  <section class="bg-body-secondary">
+    <div data-aos="zoom-in-down" id="container">
+      
+      <div class="ps-5" id="slider-container">
+        <div class="tanim fs-5 fw-bold ps-2">
+          <span>Elektronik Eşyalar </span>
+        </div>
+        <span onclick="slideRight()" class="btn"></span>
+          <div class="kaydir gap-3 " id="slider">
+            <div class="card">
+              <div class="slide "><img id="a" src="https://productimages.hepsiburada.net/s/76/222-222/110000018213454.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">Iphone</p>
+                <p class="fs-5 modeli">12 Pro Max </p>
+                <p class="fs-6 fiyatı">40.000TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+            <div class="card">
+              <div class="slide"><img id="2" src="https://productimages.hepsiburada.net/s/498/222-222/110000550303270.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">LENOVO</p>
+                <p class="fs-5 modeli">LENOVO LEGION FHD  </p>
+                <p class="fs-6 fiyatı">4.900TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>  
+            <div class="card">
+              <div class="slide"><img id="3" src="https://productimages.hepsiburada.net/s/406/222-222/110000434311014.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">MSI</p>
+                <p class="fs-5 modeli">MSI THIN </p>
+                <p class="fs-6 fiyatı">23.000TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+            <div class="card">
+              <div class="slide"><img id="4" src="https://productimages.hepsiburada.net/s/57/222-222/11264333217842.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">ANKER</p>
+                <p class="fs-5 modeli">Anker Soundcore</p>
+                <p class="fs-6 fiyatı">2.000TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+            <div class="card">
+              <div class="slide"><img id="5" src="https://productimages.hepsiburada.net/s/9/222-222/8934087950386.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">SAN</p>
+                <p class="fs-5 modeli">Sandisk SSD</p>
+                <p class="fs-6 fiyatı">550TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+            <div class="card">
+              <div class="slide"><img id="6" src="https://productimages.hepsiburada.net/s/57/222-222/11271613317170.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">SNOW</p>
+                <p class="fs-5 modeli">Snowman Soğutucu</p>
+                <p class="fs-6 fiyatı">799,99TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+            <div class="card">
+              <div class="slide"><img id="7" src="https://productimages.hepsiburada.net/s/48/222-222/10938125287474.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">AMD</p>
+                <p class="fs-5 modeli">Ryzen 5 5600x </p>
+                <p class="fs-6 fiyatı">5.300TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+            <div class="card">
+              <div class="slide"><img id="8" src="https://productimages.hepsiburada.net/s/381/222-222/110000399311183.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">PUSAT</p>
+                <p class="fs-5 modeli">Pusat K3 Pro</p>
+                <p class="fs-6 fiyatı">1499TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+            <div class="card">
+              <div class="slide"><img id="9" src="https://productimages.hepsiburada.net/s/299/222-222/110000288950004.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">CASPER</p>
+                <p class="fs-5 modeli">Casper Excalibur</p>
+                <p class="fs-6 fiyatı">4.499TL</p>
+                <a href="#"><button onclick="ekle()" class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+            <div class="card">
+              <div class="slide"><img id= "10" src="https://productimages.hepsiburada.net/s/460/222-222/110000496105115.jpg/format:webp" alt=""></div>  
+              <div class="pt-4 ps-4">
+                <p class="markası">MONSTER</p>
+                <p class="fs-5 modeli">Monster Tulpar T7</p>
+                <p class="fs-6 fiyatı">36.999TL</p>
+                <a href="#"><button onclick="ekle()"  class="bn632-hover bn24">Sepete Ekle</button></a>
+              </div> 
+            </div>
+        </div>
+        <span onclick="slideLeft()" class="btn "></span>
+      </div>
+    </div>
+  </section>
+
+  <section  class="kay bg-body-secondary">
+    <div data-aos="zoom-in-up" class="section full-height over-hide px-4 px-sm-0">
+      <div class="container d-flex justify-content-center">
+
+          <div class="col-lg-10 col-xl-8 padding-tb">
+            <div data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine" class="d-flex justify-content-center fs-2 fw-bold text-primary p-4">
+              <p>KAÇIRILMAYACAK FIRSATLAR, PREMİUM FİYATLAR</p>
+            </div>
+            <div class="section mx-auto text-center slider-height-padding">
+                    <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
+                    <label for="slide-1">
+                      <img class="rounded-5" width="90%" height="100%" src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2103_20231201171102.jpeg/format:webp" alt="">
+                    </label>
+                    <input class="checkbox scnd" type="radio" name="slider" id="slider-2"/>
+                    <label for="slider-2"><img class="rounded-5" width="100%" height="100%" src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2100_20231201103145.jpeg/format:webp" alt=""></label>
+                    <input class="checkbox thrd" type="radio" name="slider" id="slider-3"/>
+                    <label for="slider-3"><img class="rounded-5" width="90%" height="100%" src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2089_20231201171246.jpeg/format:webp" alt=""></label>
+                    <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
+                    <label for="slider-4"><img class="rounded-5" width="100%" height="100%" src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2115_20220517120357.jpeg/format:webp" alt=""></label>   
+                         
+                <ul>
+                  <li>
+                    <img width="100%" height="100%" src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2103_20231201171102.jpeg/format:webp" alt="">
+                    <span>BEYAZ EŞYA GECESİ</span>
+                    </li>
+                  <li>
+                    <img width="100%" height="100%" src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2100_20231201103145.jpeg/format:webp" alt="">
+                    <span>EN BEĞENİLEN KİTAPLAR</span>
+                    </li>
+                  <li>
+                    <img width="100%" height="100%" src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2089_20231201171246.jpeg/format:webp" alt="">
+                    <span>İNDİRİMLİ ELEKTRONİK EŞYALAR</span>
+                    </li>
+                  <li>
+                    <img  width="100%" height="100%" src="https://images.hepsiburada.net/banners/s/0/672-378/bannerImage2115_20220517120357.jpeg/format:webp" alt="">
+                    <span>TELEVİZYONLARDA ŞOK İNDİRİM</span>
+                    </li>
+                  </ul>
+                  
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+ <section class="bg-body-secondary">
+  <div data-aos="zoom-in-up" class="altyazi d-flex justify-content-center">
+    <h2 data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine" class="fs-1 fw-bold text-primary">EN ÇOK SATAN ÜRÜNLER</h2>
+  </div>
+  <div data-aos="zoom-in-up" class="container">
+    <div class="slider-wrapper">
+      <button id="prev-slide" class="slide-button material-symbols-rounded">
+        <
+      </button>
+      <ul class="image-list">
+        <div class=" border border-2"> 
+          <img class="image-item text-bg-light" src="https://cdn.dsmcdn.com/ty732/product/media/images/20230216/14/282148588/113335703/1/1_org_zoom.jpg" alt="img-1" />
+        </div>
+        <img class="image-item bg-danger" src="https://cdn.dsmcdn.com/ty770/product/media/images/20230309/15/299760039/190971587/1/1_org_zoom.jpg" alt="img-2" />
+        <img class="image-item bg-danger" src="https://productimages.hepsiburada.net/s/86/222-222/110000028290288.jpg/format:webp" alt="img-3" />
+        <img class="image-item bg-danger" src="https://cdn.dsmcdn.com/ty960/product/media/images/20230703/11/390573252/375002642/1/1_org_zoom.jpg" alt="img-4" />
+        <img class="image-item bg-danger" src="https://productimages.hepsiburada.net/s/300/222-222/110000290671793.jpg/format:webp" alt="img-5" />
+        <img class="image-item bg-danger" src="https://productimages.hepsiburada.net/s/487/222-222/110000533902483.jpg/format:webp" alt="img-6" />
+        <img class="image-item bg-danger" src="https://productimages.hepsiburada.net/s/508/222-222/110000563053441.jpg/format:webp" alt="img-7" />
+        <img class="image-item bg-danger" src="https://productimages.hepsiburada.net/s/205/222-222/110000178936886.jpg/format:webp" alt="img-8" />
+        <img class="image-item bg-danger" src="https://productimages.hepsiburada.net/s/90/222-222/110000033268504.jpg/format:webp" alt="img-9" />
+        <img class="image-item bg-danger" src="https://cdn.dsmcdn.com/ty112/product/media/images/20210512/18/87903566/173777003/1/1_org_zoom.jpg" alt="img-10" />
+      </ul>
+      <button id="next-slide" class="slide-button material-symbols-rounded">
+        >
+      </button>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div>
+ </section>
+</div>
+
+
+<div class="butonayarla ">
+  <div class="  align-items-center">
+    <button id="getir" class="bn632-hover bn24 ">Telefon Kategorisini Getir</button>
+  </div>
+  <div class="  align-items-center">
+    <button id="giyim" class="bn632-hover bn24 ">Giyim Kategorisini Getir</button>
+  </div>
+  <div class="  align-items-center">
+    <button id="getir" class="bn632-hover bn24 ">Aksesuar Kategorisini Getir</button>
+  </div>
+  <div class="  align-items-center">
+    <button id="getir" class="bn632-hover bn24 ">Kozmetik Kategorisini Getir</button>
+  </div>
+</div>
+<div data-aos="fade-right" class="wrapper_2 container ">
+       
+        
+</div>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/190644aed9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
